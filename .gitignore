@@ -1,0 +1,29 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# dbt
+target/
+dbt_packages/
+
+# Snowflake
+*.snowsql
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Power BI
+*.pbix.lock
+
+# Secrets
+secrets/
