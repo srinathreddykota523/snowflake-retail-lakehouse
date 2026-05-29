@@ -112,6 +112,24 @@ Power BI Dashboard
 
 ---
 
+## Data Warehouse Model
+
+The project follows a dimensional modeling approach.
+
+### Star Schema
+
+```text
+                     DIM_DATE
+                         |
+                         |
+DIM_CUSTOMERS ---- FACT_ORDERS ---- DIM_PRODUCTS
+                         |
+                         |
+                    DIM_PAYMENTS
+```
+
+---
+
 ## Technology Stack
 
 | Component             | Technology     |
@@ -188,16 +206,6 @@ READONLY_ROLE
 * Warehouse Isolation
 * Least Privilege Access
 * Role-Based Access Control
-
----
-
-## Documentation
-
-| Document                 | Description                         |
-| ------------------------ | ----------------------------------- |
-| docs/project_overview.md | Project objectives and architecture |
-| docs/snowflake_setup.md  | Infrastructure setup                |
-| docs/setup_guide.md      | Development workflow and tooling    |
 
 ---
 
