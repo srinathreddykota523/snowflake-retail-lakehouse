@@ -29,6 +29,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 2 — Snowflake Infrastructure Setup
 * Phase 3 — Data Modeling & Dataset Selection
 * Phase 4 — Data Ingestion
+* Phase 5 — Azure Setup & Snowpipe Automation
 
 ---
 
@@ -186,43 +187,6 @@ snowflake-retail-lakehouse/
 
 ---
 
-## Cloud Architecture
-
-The platform integrates Snowflake with Azure Blob Storage to support secure and scalable cloud-native ingestion.
-
-### Azure Components
-
-- Azure Storage Account
-- Blob Container
-- Managed Identity Authentication
-- Snowflake Storage Integration
-
-### Storage Account
-
-retaillakehouse523
-
-### Container
-
-retail-data
-
-### Architecture
-
-CSV Files
-    |
-    v
-Azure Blob Storage
-    |
-    v
-Snowflake External Stage
-    |
-    v
-Snowpipe
-    |
-    v
-RAW Tables
-
----
-
 ## Snowflake Infrastructure
 
 ### Database
@@ -285,6 +249,62 @@ Git Commit
    ▼
 GitHub
 ```
+
+---
+
+## Azure Cloud Integration
+
+The platform integrates Snowflake with Azure Blob Storage to support cloud-native ingestion patterns.
+
+### Azure Resources
+
+| Resource        | Value              |
+| --------------- | ------------------ |
+| Storage Account | retaillakehouse523 |
+| Container       | retail-data        |
+
+### Architecture
+
+```text
+CSV Files
+      |
+      v
+Azure Blob Storage
+      |
+      v
+Storage Integration
+      |
+      v
+External Stage
+      |
+      v
+Snowpipe
+      |
+      v
+RAW Tables
+```
+
+### Security Features
+
+* Managed Identity Authentication
+* Storage Integration
+* Least Privilege Access
+* Environment Variable Based Secret Management
+
+### Snowpipes
+
+* CUSTOMERS_PIPE
+* ORDERS_PIPE
+* PRODUCTS_PIPE
+* ORDER_ITEMS_PIPE
+* PAYMENTS_PIPE
+
+### Future Enhancements
+
+* Azure Event Grid
+* Azure Key Vault
+* Azure Data Factory
+* Near Real-Time Processing
 
 ---
 
