@@ -150,43 +150,6 @@ DIM_CUSTOMERS ---- FACT_ORDERS ---- DIM_PRODUCTS
 
 ---
 
-## Technology Stack
-
-| Component             | Technology     |
-| --------------------- | -------------- |
-| Data Warehouse        | Snowflake      |
-| Transformation        | SQL            |
-| Analytics Engineering | dbt            |
-| Scripting             | Python         |
-| Visualization         | Power BI       |
-| Version Control       | Git            |
-| Repository Hosting    | GitHub         |
-| CI/CD                 | GitHub Actions |
-
----
-
-## Repository Structure
-
-```text
-snowflake-retail-lakehouse/
-│
-├── datasets/
-├── sql/
-│   ├── setup/
-│   ├── raw/
-│   ├── transformations/
-│   ├── advanced/
-│   └── optimization/
-│
-├── dbt/
-├── python/
-├── dashboards/
-├── docs/
-└── .github/
-```
-
----
-
 ## Snowflake Infrastructure
 
 ### Database
@@ -305,6 +268,43 @@ RAW Tables
 * Azure Key Vault
 * Azure Data Factory
 * Near Real-Time Processing
+
+---
+
+## Technology Stack
+
+| Component             | Technology     |
+| --------------------- | -------------- |
+| Data Warehouse        | Snowflake      |
+| Transformation        | SQL            |
+| Analytics Engineering | dbt            |
+| Scripting             | Python         |
+| Visualization         | Power BI       |
+| Version Control       | Git            |
+| Repository Hosting    | GitHub         |
+| CI/CD                 | GitHub Actions |
+
+---
+
+## Repository Structure
+
+```text
+snowflake-retail-lakehouse/
+│
+├── datasets/
+├── sql/
+│   ├── setup/
+│   ├── raw/
+│   ├── transformations/
+│   ├── advanced/
+│   └── optimization/
+│
+├── dbt/
+├── python/
+├── dashboards/
+├── docs/
+└── .github/
+```
 
 ---
 
