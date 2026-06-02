@@ -27,21 +27,8 @@ The project is being developed incrementally using a production-style workflow w
 
 * Phase 1 — Project Initialization
 * Phase 2 — Snowflake Infrastructure Setup
-
-### In Progress
-
 * Phase 3 — Data Modeling & Dataset Selection
-
-### Planned
-
-* Data Ingestion
-* Snowpipe Automation
-* Star Schema Modeling
-* Streams & Tasks
-* Dynamic Tables
-* dbt Integration
-* Power BI Dashboard
-* CI/CD Pipeline
+* Phase 4 — Data Ingestion
 
 ---
 
@@ -130,6 +117,38 @@ DIM_CUSTOMERS ---- FACT_ORDERS ---- DIM_PRODUCTS
 
 ---
 
+## Data Ingestion Layer
+
+### Source Files
+
+- Customers
+- Orders
+- Products
+- Order Items
+- Payments
+
+### Ingestion Components
+
+- Internal Stage
+- CSV File Format
+- COPY INTO Commands
+
+### Raw Tables
+
+- RAW_CUSTOMERS
+- RAW_ORDERS
+- RAW_PRODUCTS
+- RAW_ORDER_ITEMS
+- RAW_PAYMENTS
+
+### Validation
+
+- Row Count Verification
+- Null Checks
+- Duplicate Detection
+
+---
+
 ## Technology Stack
 
 | Component             | Technology     |
@@ -164,6 +183,43 @@ snowflake-retail-lakehouse/
 ├── docs/
 └── .github/
 ```
+
+---
+
+## Cloud Architecture
+
+The platform integrates Snowflake with Azure Blob Storage to support secure and scalable cloud-native ingestion.
+
+### Azure Components
+
+- Azure Storage Account
+- Blob Container
+- Managed Identity Authentication
+- Snowflake Storage Integration
+
+### Storage Account
+
+retaillakehouse523
+
+### Container
+
+retail-data
+
+### Architecture
+
+CSV Files
+    |
+    v
+Azure Blob Storage
+    |
+    v
+Snowflake External Stage
+    |
+    v
+Snowpipe
+    |
+    v
+RAW Tables
 
 ---
 
