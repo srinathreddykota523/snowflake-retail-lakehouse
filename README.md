@@ -271,6 +271,32 @@ RAW Tables
 
 ---
 
+## Transformation Layer
+
+The transformation layer converts raw source data into standardized business-ready datasets.
+
+### Transformation Tables
+
+- CUSTOMERS_CLEAN
+- ORDERS_CLEAN
+- PRODUCTS_CLEAN
+- PAYMENTS_CLEAN
+- ORDER_ITEMS_CLEAN
+
+### Data Quality Controls
+
+- Null Checks
+- Duplicate Checks
+- Revenue Validation
+
+### Business Rules
+
+- Data Standardization
+- Null Handling
+- Invalid Record Removal
+
+---
+
 ## Technology Stack
 
 | Component             | Technology     |
