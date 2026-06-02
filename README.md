@@ -419,6 +419,28 @@ Planned:
 
 ---
 
+## Architecture Decision Records
+
+Major design decisions are documented throughout the project to explain the rationale behind architectural choices.
+
+Examples include:
+
+* Azure Blob Storage vs Internal Stages
+* Snowpipe vs Manual COPY INTO
+* Star Schema vs Normalized Reporting Model
+* Managed Identity vs Storage Keys
+* Dedicated Warehouses vs Shared Compute
+
+See:
+
+```text
+docs/architecture_decisions.md
+```
+
+for detailed decision records.
+
+---
+
 ## Author
 
 Srinath Reddy Kota
