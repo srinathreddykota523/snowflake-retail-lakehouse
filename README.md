@@ -33,6 +33,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 6 — Transformation Layer
 * Phase 7 — Dimensional Modeling
 * Phase 8 — Streams + Tasks + Incremental Processing
+* Phase 9 — Dynamic Tables
 
 ---
 
@@ -348,6 +349,44 @@ The platform uses Snowflake Streams and Tasks to implement Change Data Capture (
 - Reduced compute costs
 - Faster processing
 - Automated pipeline execution
+
+---
+
+## Dynamic Tables
+
+The project demonstrates Snowflake Dynamic Tables as a modern alternative to Streams and Tasks.
+
+### Implemented Objects
+
+* DT_CUSTOMERS
+* DT_PRODUCTS
+* DT_SALES_SUMMARY
+
+### Benefits
+
+* Declarative Pipelines
+* Automatic Refreshes
+* Reduced Maintenance
+* Native Incremental Processing
+
+### Architecture
+
+RAW
+|
+v
+Dynamic Tables
+|
+v
+Analytics Layer
+
+### Comparison
+
+The project includes both:
+
+* Streams & Tasks
+* Dynamic Tables
+
+to demonstrate multiple Snowflake pipeline design patterns.
 
 ---
 
