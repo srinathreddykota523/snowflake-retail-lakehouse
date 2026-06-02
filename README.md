@@ -30,6 +30,9 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 3 — Data Modeling & Dataset Selection
 * Phase 4 — Data Ingestion
 * Phase 5 — Azure Setup & Snowpipe Automation
+* Phase 6 — Transformation Layer
+* Phase 7 — Dimensional Modeling
+* Phase 8 — Streams + Tasks + Incremental Processing
 
 ---
 
