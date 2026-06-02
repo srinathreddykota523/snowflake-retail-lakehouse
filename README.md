@@ -325,6 +325,32 @@ The MART layer implements a dimensional model optimized for analytics and report
 
 ---
 
+## Incremental Processing
+
+The platform uses Snowflake Streams and Tasks to implement Change Data Capture (CDC) and automated transformations.
+
+### Streams
+
+- CUSTOMER_STREAM
+- ORDER_STREAM
+- PRODUCT_STREAM
+- PAYMENT_STREAM
+- ORDER_ITEM_STREAM
+
+### Tasks
+
+- Automated scheduling
+- Incremental transformations
+- Native Snowflake orchestration
+
+### Benefits
+
+- Reduced compute costs
+- Faster processing
+- Automated pipeline execution
+
+---
+
 ## Technology Stack
 
 | Component             | Technology     |
