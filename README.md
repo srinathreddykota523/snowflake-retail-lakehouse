@@ -34,6 +34,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 7 — Dimensional Modeling
 * Phase 8 — Streams + Tasks + Incremental Processing
 * Phase 9 — Dynamic Tables
+* Phase 10 — Security & Governance
 
 ---
 
@@ -387,6 +388,32 @@ The project includes both:
 * Dynamic Tables
 
 to demonstrate multiple Snowflake pipeline design patterns.
+
+---
+
+## Security & Governance
+
+The platform implements enterprise-grade Snowflake security controls.
+
+### Security Features
+
+* Role-Based Access Control (RBAC)
+* Secure Views
+* Dynamic Data Masking
+* Row-Level Security
+
+### Roles
+
+* DATA_ENGINEER_ROLE
+* BI_ANALYST_ROLE
+* AUDITOR_ROLE
+
+### Governance Objectives
+
+* Least Privilege Access
+* Data Protection
+* Controlled Analytics Access
+* Auditability
 
 ---
 
