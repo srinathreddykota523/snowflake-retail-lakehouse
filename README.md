@@ -297,6 +297,31 @@ The transformation layer converts raw source data into standardized business-rea
 
 ---
 
+## Analytics Warehouse
+
+The MART layer implements a dimensional model optimized for analytics and reporting.
+
+### Dimension Tables
+
+- DIM_CUSTOMERS
+- DIM_PRODUCTS
+- DIM_DATE
+- DIM_PAYMENTS
+
+### Fact Table
+
+- FACT_ORDERS
+
+### Metrics
+
+- Revenue
+- Order Count
+- Average Order Value
+- Top Products
+- Monthly Sales
+
+---
+
 ## Technology Stack
 
 | Component             | Technology     |
