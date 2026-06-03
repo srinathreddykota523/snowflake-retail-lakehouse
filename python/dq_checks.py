@@ -1,20 +1,11 @@
-import snowflake.connector
+from utils.snowflake_connection import get_connection
 import pandas as pd
 
-from config.settings import *
-
-conn = snowflake.connector.connect(
-    account=SNOWFLAKE_ACCOUNT,
-    user=SNOWFLAKE_USER,
-    password=SNOWFLAKE_PASSWORD,
-    warehouse=SNOWFLAKE_WAREHOUSE,
-    database=SNOWFLAKE_DATABASE,
-)
+conn = get_connection()
 
 query = """
-SELECT
-    COUNT(*) AS CUSTOMER_COUNT
-FROM MART.DIM_CUSTOMERS
+SELECT COUNT(*) AS CUSTOMER_COUNT
+FROM DIM_CUSTOMERS_RECOVERED
 """
 
 df = pd.read_sql(query, conn)

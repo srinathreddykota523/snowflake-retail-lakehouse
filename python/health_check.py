@@ -1,13 +1,11 @@
-import snowflake.connector
 import pandas as pd
 
 from config.settings import *
 
-conn = snowflake.connector.connect(
-    account=SNOWFLAKE_ACCOUNT,
-    user=SNOWFLAKE_USER,
-    password=SNOWFLAKE_PASSWORD,
-)
+from utils.snowflake_connection import get_connection
+
+
+conn = get_connection()
 
 query = """
 SHOW WAREHOUSES

@@ -36,6 +36,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 9 — Dynamic Tables
 * Phase 10 — Security & Governance
 * Phase 11 — Operations, Recovery & Cost Governance
+* Phase 12 — Python Automation
 
 ---
 
@@ -444,6 +445,50 @@ The platform incorporates operational controls to support enterprise reliability
 * Operational Monitoring
 * Cost Visibility
 * Disaster Recovery Planning
+
+---
+
+## Python Automation Framework
+
+The platform includes a Python-based automation layer used for operational monitoring, validation, and governance activities.
+
+### Utilities
+
+| Utility                | Purpose                       |
+| ---------------------- | ----------------------------- |
+| dq_checks.py           | Data quality validation       |
+| health_check.py        | Snowflake platform monitoring |
+| metadata_report.py     | Metadata reporting            |
+| validate_blob_files.py | Azure Blob validation         |
+
+### Technologies
+
+* snowflake-connector-python
+* pandas
+* python-dotenv
+* azure-storage-blob
+* openpyxl
+
+### Configuration
+
+Environment variables are managed through:
+
+```text
+.env
+.env.example
+```
+
+### Outputs
+
+Generated reports are stored in:
+
+```text
+reports/
+```
+
+### Design Principle
+
+Python is used for automation and operational tooling while core data transformations remain inside Snowflake.
 
 ---
 
