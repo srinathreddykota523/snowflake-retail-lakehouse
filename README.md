@@ -35,6 +35,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 8 — Streams + Tasks + Incremental Processing
 * Phase 9 — Dynamic Tables
 * Phase 10 — Security & Governance
+* Phase 11 — Operations, Recovery & Cost Governance
 
 ---
 
@@ -414,6 +415,35 @@ The platform implements enterprise-grade Snowflake security controls.
 * Data Protection
 * Controlled Analytics Access
 * Auditability
+
+---
+
+## Operations & Governance
+
+The platform incorporates operational controls to support enterprise reliability and cost management.
+
+### Recovery Features
+
+* Time Travel
+* Zero Copy Cloning
+
+### Cost Management
+
+* Resource Monitors
+* Warehouse Metering Analysis
+* Auto Suspend / Resume
+
+### Azure Integration
+
+* Azure Blob Storage
+* Managed Identity Authentication
+* Azure Key Vault Design
+
+### Governance
+
+* Operational Monitoring
+* Cost Visibility
+* Disaster Recovery Planning
 
 ---
 
