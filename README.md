@@ -37,6 +37,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 10 — Security & Governance
 * Phase 11 — Operations, Recovery & Cost Governance
 * Phase 12 — Python Automation
+* Phase 13 — dbt integration
 
 ---
 
@@ -489,6 +490,45 @@ reports/
 ### Design Principle
 
 Python is used for automation and operational tooling while core data transformations remain inside Snowflake.
+
+---
+
+## dbt Integration
+
+The platform uses dbt to manage transformations and analytics models.
+
+### dbt Features
+
+* Source Definitions
+* Staging Models
+* Mart Models
+* Automated Tests
+* Documentation Generation
+* Data Lineage
+
+### Model Layers
+
+```text
+RAW
+ ↓
+STAGING
+ ↓
+MARTS
+```
+
+### Testing
+
+Implemented dbt tests:
+
+* unique
+* not_null
+
+### Benefits
+
+* Modular SQL
+* Version Control
+* Automated Documentation
+* Analytics Engineering Best Practices
 
 ---
 
