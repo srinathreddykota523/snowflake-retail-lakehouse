@@ -1,0 +1,23 @@
+retail_lakehouse_dbt:
+  target: dev
+
+  outputs:
+
+    dev:
+      type: snowflake
+
+      account: <account>
+
+      user: <user>
+
+      password: <password>
+
+      role: DATA_ENGINEER_ROLE
+
+      warehouse: TRANSFORM_WH
+
+      database: RETAIL_LAKEHOUSE
+
+      schema: DBT
+
+      threads: 4
