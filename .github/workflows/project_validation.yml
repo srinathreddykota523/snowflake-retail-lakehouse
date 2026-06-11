@@ -1,0 +1,29 @@
+name: Project Validation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  structure-check:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Verify Required Directories
+        run: |
+
+          test -d sql
+
+          test -d docs
+
+          test -d python
+
+          test -d dashboards
+
+          test -d dbt
