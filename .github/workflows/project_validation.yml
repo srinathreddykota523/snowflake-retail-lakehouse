@@ -26,4 +26,4 @@ jobs:
 
           test -d dashboards
 
-          test -d dbt
+          test -d retail_lakehouse_dbt
