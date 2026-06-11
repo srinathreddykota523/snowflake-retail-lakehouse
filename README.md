@@ -561,6 +561,10 @@ Snowflake MART Layer
 
 Power BI Desktop
 
+### Executive Dashboard
+
+![Executive Dashboard](dashboards/screenshots/executive_dashboard.png)
+
 ---
 
 ## CI/CD Pipeline
@@ -585,6 +589,29 @@ The project uses GitHub Actions to automate validation and quality assurance pro
 Credentials are not stored in source control.
 
 Future integrations will use GitHub Secrets and Azure Key Vault for secure secret management.
+
+---
+
+## Interview Preparation
+
+The repository includes dedicated interview-preparation material:
+
+- docs/interview_guide.md
+- docs/interview_cheatsheet.md
+
+Topics covered:
+
+- Snowflake Architecture
+- Snowpipe
+- Streams & Tasks
+- Dynamic Tables
+- Time Travel
+- Zero Copy Cloning
+- RBAC
+- dbt
+- Power BI
+- Cost Optimization
+- Security & Governance
 
 ---
 
