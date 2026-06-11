@@ -39,6 +39,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 12 — Python Automation
 * Phase 13 — dbt integration
 * Phase 14 — Power BI
+* Phase 15 — CI CD Pipeline
 
 ---
 
@@ -559,6 +560,31 @@ Snowflake MART Layer
 ### Technology
 
 Power BI Desktop
+
+---
+
+## CI/CD Pipeline
+
+The project uses GitHub Actions to automate validation and quality assurance processes.
+
+### Workflows
+
+* Python Validation
+* dbt Validation
+* Repository Structure Validation
+
+### Benefits
+
+* Automated Testing
+* Continuous Validation
+* Improved Quality
+* Deployment Readiness
+
+### Security
+
+Credentials are not stored in source control.
+
+Future integrations will use GitHub Secrets and Azure Key Vault for secure secret management.
 
 ---
 
