@@ -409,6 +409,17 @@ Benefits include:
 
 ---
 
+# Key Design Principles
+
+- Cloud Native
+- Security First
+- Incremental Processing
+- Separation of Compute and Storage
+- Analytics Engineering
+- Cost Optimization
+
+---
+
 # Future Decisions
 
 The following architectural decisions will be evaluated in future phases:
