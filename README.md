@@ -38,6 +38,7 @@ The project is being developed incrementally using a production-style workflow w
 * Phase 11 — Operations, Recovery & Cost Governance
 * Phase 12 — Python Automation
 * Phase 13 — dbt integration
+* Phase 14 — Power BI
 
 ---
 
@@ -529,6 +530,35 @@ Implemented dbt tests:
 * Version Control
 * Automated Documentation
 * Analytics Engineering Best Practices
+
+---
+
+## Business Intelligence
+
+The project includes a Power BI reporting layer built on top of Snowflake and dbt models.
+
+### Dashboard Pages
+
+- Executive Summary
+- Customer Analytics
+- Product Analytics
+- Operational Analytics
+
+### Key Metrics
+
+- Revenue
+- Orders
+- Average Order Value
+- Customer Count
+- Product Performance
+
+### Data Source
+
+Snowflake MART Layer
+
+### Technology
+
+Power BI Desktop
 
 ---
 
